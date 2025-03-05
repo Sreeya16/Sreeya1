@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<stdio.h>
+Write a program to return the nearest 10 multiple of any given number
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a;
+    scanf("%d",&a);
+    int r=a%10;
+    if(r<5)
+    {
+        printf("%d",a-r);
+    }
+    else 
+    {
+      printf("%d",(a+(10-r)));  
+    }
+    
+    
+    
+    return 0;
+}
